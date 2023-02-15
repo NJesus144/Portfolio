@@ -89,7 +89,7 @@
 
     <section class="container mt-5" id="sobre">
       <div class="row w-100">
-        <div class="col-md-12">
+        <div class="col-md-12" data-anime="down">
           <h2 class="pt-3">Sobre</h2>
           <p>
             Desenvolvedor de Software, fascinado por tecnologia, e procuro, através do desenvolvimento de software criar
@@ -108,9 +108,9 @@
 
       <div class="row mt-4">
         <div class="col-md-4">
-          <img class="img-fluid shadow" src="../static/img/43360.jpg" alt="Foto do Nalbert">
+          <img class="img-fluid shadow" src="../static/img/43360.jpg" alt="Foto do Nalbert" data-anime="left">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-anime="right">
           <h3>Desenvolvedor Fullstack | Frontend | Backend</h3>
           <p>Atualmente trabalho em projetos pessoais para evoluir e adquirir experiência,
             trabalhando principalmente com JavaScript no front-end e no back-end por meio de frameworks e bibliotecas
@@ -158,38 +158,38 @@
 
         <div class="row">
           <div class="col-md-6">
-            <div class="box">
+            <div class="box" data-anime="left">
               <p>HTML</p>
             </div>
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>JavaScript</p>
             </div>
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>ReactJs</p>
             </div>
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>NextJs</p>
             </div>
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>NodeJs (Express)</p>
             </div>
 
           </div>
 
           <div class="col-md-6">
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>CSS</p>
             </div>
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>TypeScript</p>
             </div>
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>Git</p>
             </div>
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>Github</p>
             </div>
-            <div class="box">
+            <div class="box" data-anime="left">
               <p>MongoDB</p>
             </div>
           </div>
@@ -200,15 +200,15 @@
         <div class="row">
 
           <div class="col-md-6">
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>Comunicação</p>
             </div>
 
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>Trabalho em equipe</p>
             </div>
 
-            <div class="box">
+            <div class="box" data-anime="left" >
               <p>Proatividade</p>
             </div>
 
@@ -216,15 +216,15 @@
 
 
           <div class="col-md-6">
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>Empatia</p>
             </div>
 
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>comprometimento</p>
             </div>
 
-            <div class="box">
+            <div class="box"  data-anime="left">
               <p>Educação e cordialidade</p>
             </div>
 
@@ -242,7 +242,7 @@
           <div class="col-md-6">
             <h3 class="cv-title">Educação</h3>
 
-            <div class="cv-item">
+            <div class="cv-item"  data-anime="up">
               <h4>Desenvolvedor Full Stack</h4>
               <h5>2022 - 2023</h5>
               <p><em>SejaDev</em></p>
@@ -250,7 +250,7 @@
                 HTML, CSS, JavasCript, ReactJs, NextJs, NodeJs (Express) e MongoDB</p>
             </div>
 
-            <div class="cv-item">
+            <div class="cv-item" data-anime="up">
               <h4>Full Stack Turbo</h4>
               <h5>2022 - 2023</h5>
               <p><em>TipsCode</em></p>
@@ -258,7 +258,7 @@
                 HTML, CSS, JavasCript, ReactJs, NodeJs (Express)</p>
             </div>
 
-            <div class="cv-item">
+            <div class="cv-item" data-anime="up">
               <h4>Desenvolvimento Web</h4>
               <h5>2021 - 2022</h5>
               <p><em>B7web</em></p>
@@ -269,7 +269,7 @@
           <div class="col-md-6">
             <h3 class="cv-title">Profissional</h3>
 
-            <div class="cv-item">
+            <div class="cv-item" data-anime="up">
               <h4>Assistente de logística pleno</h4>
               <h5>2021 - 2023 (Atual) </h5>
               <p><em>3D Solar tecnologia</em></p>
@@ -278,12 +278,12 @@
                 recebimento, armazenagem, movimentação, expedição e
                 distribuição de materiais e produtos, colaborando no
                 controle das operações logísticas. <br> <br>
-               
+
                 • Participação em reuniões com os superiores e outros
                 membros da equipe, sugerindo melhorias na área, se
                 necessário, a fim de melhorar a eficiência e a qualidade do
                 serviço. <br> <br>
-                
+
                 • Cadastro, atualização e Lançamento de dados no sistema,
                 contribuindo para a organização dos processos.
               </p>
@@ -293,7 +293,217 @@
       </div>
       </div>
     </section>
-    
+
+    <section id="portfolio" class="section-bg mt-5">
+      <div class="container pb-5 pt-5" data-anime="left">
+        <h2 class="pb-4">Portfólio</h2>
+        <div id="carouselPortfolio" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/social-dev-web.png" class="card-img-top" alt="Rede social para devs">
+                    <div class="card-body">
+                      <h5 class="card-title">Social Dev</h5>
+                      <p class="card-text">
+                        Projeto Fullstack criado com React, Next, Node e MongoDB. <br>
+                        Login e autenticação, criptografia de senha e CRUD de posts.
+                      </p>
+
+                      <div class="d-flex justify-content-center gap-2">
+                        <a href="https://social-dev-njesus144.vercel.app/" target="_blank"
+                          class="btn btn-outline-primary">
+                          <i class="bi bi-link-45deg "></i>
+                        </a>
+                        <a href="https://github.com/NJesus144/social-dev" target="_blank"
+                          class="btn btn-outline-primary">
+                          <i class="bi bi-github"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/star-wars-img1.png" class="card-img-top" alt="Rede social para devs">
+                    <div class="card-body">
+                      <h5 class="card-title">Swapi</h5>
+                      <p class="card-text">
+                        Projeto feito consumindo duas APIS de Star Wars diferentes,
+                        uma fornece os personagens e imagens, a outra disponibiliza os planetas, filmes e especies.
+                      </p>
+
+                      <div class="d-flex justify-content-center gap-2">
+                        <a href="https://swapi-xi.vercel.app/" target="_blank" class="btn btn-outline-primary">
+                          <i class="bi bi-link-45deg "></i>
+                        </a>
+                        <a href="https://github.com/NJesus144/swapi" target="_blank" class="btn btn-outline-primary">
+                          <i class="bi bi-github"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/lol-api2.png" class="card-img-top" alt="Rede social para devs">
+                    <div class="card-body">
+                      <h5 class="card-title">LOL API</h5>
+                      <p class="card-text">
+                        LOL API é uma ferramenta que busca os dados de qualquer
+                        jogador do servidor brasileiro de league of legends por meio
+                        da api do league.
+                      </p>
+
+                      <div class="d-flex justify-content-center gap-2">
+                        <a href="https://lol-api-njesus144.vercel.app/" target="_blank" class="btn btn-outline-primary">
+                          <i class="bi bi-link-45deg "></i>
+                        </a>
+                        <a href="https://github.com/NJesus144/lol-api" target="_blank" class="btn btn-outline-primary">
+                          <i class="bi bi-github"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/poke-mewtwo.png" class="card-img-top" alt="Rede social para devs">
+                    <div class="card-body">
+                      <h5 class="card-title">Pokedex</h5>
+                      <p class="card-text">
+                        Pokedex lista todos os pokemons, e conta ainda com paginação, busca, detalhes
+                        e context api para salvar os favoritos. Foi utilizado React, TypeScript e TailwindCss.
+                      </p>
+
+                      <div class="d-flex justify-content-center gap-2">
+                        <a href="https://pokedex-generation.netlify.app/" target="_blank"
+                          class="btn btn-outline-primary">
+                          <i class="bi bi-link-45deg "></i>
+                        </a>
+                        <a href="https://github.com/NJesus144/pokedex" target="_blank" class="btn btn-outline-primary">
+                          <i class="bi bi-github"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div id="contrucao">
+                      <p>Em Construção!</p>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">SweetHome</h5>
+                      <p class="card-text">
+                        Projeto será uma plataforma onde usuários cadastrados poderão dar feedback sobre casas ou
+                        apartamentos alugado.
+                        O foco será lugares onde se passa férias. Será utilizado React, Next, Node e MongoDB.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <section class="pt-5 pb-5" id="contato">
+
+      <div class="container mb-5">
+        <h2 class="pt-3 pb-3">Contato</h2>
+
+        <div class="row">
+          <div class="col-md-5" >
+            <div class="card p-5 shadow border-0" data-anime="up">
+              <div class="endereco">
+                <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
+                <p>Santo André, SP</p>
+              </div>
+
+              <div class="email">
+                <h4><i class="bi bi-envelope"></i> Email:</h4>
+                <p>nalbert-edm#outlook.com</p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2173.084016923634!2d-46.549922589371164!3d-23.651731518188722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42dd842ba9a9%3A0xa33a58b01a9e438d!2sAv.%20Prestes%20Maia%20-%20Santo%20Andr%C3%A9%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1676499606530!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+
+            </div>
+          </div>
+
+          <div class="col-md-7 mt-5 mt-md-0">
+              <div class="card p-5 h-100 shadow border-0" data-anime="left">
+
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome"
+                      placeholder="Seu nome"
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email"
+                    placeholder="Seu email"
+                    >
+                  </div>
+                 
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea rows="10" type="text" class="form-control" id="mensagem" placeholder="Sua mensagem" name="mensagem"></textarea>
+                  </div>
+                 
+                  <div class="col-12 d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                  </div>
+                </form>
+
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
 
