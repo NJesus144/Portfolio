@@ -113,7 +113,7 @@ section#inicio span#subtitle {
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 5px #000;
+  text-shadow: 4px 4px 5px #00000050;
 }
 
 section#inicio div#arraste {
@@ -339,11 +339,11 @@ i.menu-mobile {
   width: 300px;
   z-index: 999;
   background-color: #021124;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-@media(max-width: 1012px) {
-  #footer{
+@media (max-width: 1012px) {
+  #footer {
     position: static;
     width: auto;
     padding: 20px 15px;
