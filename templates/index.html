@@ -161,32 +161,32 @@
             <div class="box" data-anime="left">
               <p>HTML</p>
             </div>
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>JavaScript</p>
             </div>
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>ReactJs</p>
             </div>
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>NextJs</p>
             </div>
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>NodeJs (Express)</p>
             </div>
 
           </div>
 
           <div class="col-md-6">
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>CSS</p>
             </div>
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>TypeScript</p>
             </div>
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>Git</p>
             </div>
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>Github</p>
             </div>
             <div class="box" data-anime="left">
@@ -200,15 +200,15 @@
         <div class="row">
 
           <div class="col-md-6">
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>Comunicação</p>
             </div>
 
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>Trabalho em equipe</p>
             </div>
 
-            <div class="box" data-anime="left" >
+            <div class="box" data-anime="left">
               <p>Proatividade</p>
             </div>
 
@@ -216,15 +216,15 @@
 
 
           <div class="col-md-6">
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>Empatia</p>
             </div>
 
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>comprometimento</p>
             </div>
 
-            <div class="box"  data-anime="left">
+            <div class="box" data-anime="left">
               <p>Educação e cordialidade</p>
             </div>
 
@@ -242,7 +242,7 @@
           <div class="col-md-6">
             <h3 class="cv-title">Educação</h3>
 
-            <div class="cv-item"  data-anime="up">
+            <div class="cv-item" data-anime="up">
               <h4>Desenvolvedor Full Stack</h4>
               <h5>2022 - 2023</h5>
               <p><em>SejaDev</em></p>
@@ -450,7 +450,7 @@
         <h2 class="pt-3 pb-3">Contato</h2>
 
         <div class="row">
-          <div class="col-md-5" >
+          <div class="col-md-5">
             <div class="card p-5 shadow border-0" data-anime="up">
               <div class="endereco">
                 <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
@@ -471,45 +471,56 @@
           </div>
 
           <div class="col-md-7 mt-5 mt-md-0">
-              <div class="card p-5 h-100 shadow border-0" data-anime="left">
+            <div class="card p-5 h-100 shadow border-0" data-anime="left">
 
-                <form class="row g-3">
-                  <div class="col-md-6">
-                    <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" class="form-control" id="nome" name="nome"
-                      placeholder="Seu nome"
-                    >
-                  </div>
-                  <div class="col-md-6">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email"
-                    placeholder="Seu email"
-                    >
-                  </div>
-                 
-                  <div class="col-12">
-                    <label for="mensagem" class="form-label">Mensagem:</label>
-                    <textarea rows="10" type="text" class="form-control" id="mensagem" placeholder="Sua mensagem" name="mensagem"></textarea>
-                  </div>
-                 
-                  <div class="col-12 d-flex justify-content-center mt-4">
-                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-                  </div>
-                </form>
+              <form class="row g-3" action="/send" method="POST">
+                <div class="col-md-6">
+                  <label for="nome" class="form-label">Nome:</label>
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+                </div>
 
-              </div>
+                <div class="col-12">
+                  <label for="mensagem" class="form-label">Mensagem:</label>
+                  <textarea rows="10" type="text" class="form-control" id="mensagem" placeholder="Sua mensagem"
+                    name="mensagem" required></textarea>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center mt-4">
+                  <button type="submit" id="btn-enviar" class="btn btn-primary">Enviar mensagem</button>
+
+                  <button id="btn-enviar-loader" class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Enviando...
+                  </button>
+                </div>
+              </form>
+
+            </div>
           </div>
         </div>
 
       </div>
-
     </section>
 
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+      <i class="bi bi-check-circle-fill"></i>{{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
   </main>
-
 
   <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../static/script.js"></script>
+
 </body>
 
 </html>
